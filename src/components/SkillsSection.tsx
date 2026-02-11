@@ -1,15 +1,15 @@
 const webSkills = [
-  { name: 'React', level: 95 },
-  { name: 'TypeScript', level: 90 },
-  { name: 'Node.js', level: 85 },
-  { name: 'Tailwind CSS', level: 92 },
-  { name: 'MySQL', level: 80 },
+  { name: "React", level: 65 },
+  { name: "TypeScript", level: 90 },
+  { name: "Node.js", level: 85 },
+  { name: "Tailwind CSS", level: 92 },
+  { name: "MySQL", level: 60 },
 ];
 
 const iotSkills = [
-  { name: 'ESP32/Arduino', level: 70 },
-  { name: 'Home Automation', level: 85 },
-  { name: 'Python', level: 65 },
+  { name: "ESP32/Arduino", level: 70 },
+  { name: "Home Automation", level: 85 },
+  { name: "Python", level: 65 },
 ];
 
 const SkillBar = ({ name, level }: { name: string; level: number }) => (
@@ -34,7 +34,9 @@ export const SkillsSection = () => {
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <span className="text-primary font-mono text-sm mb-4 block">My Expertise</span>
+            <span className="text-primary font-mono text-sm mb-4 block">
+              My Expertise
+            </span>
             <h2 className="text-3xl md:text-4xl font-bold">
               Skills & <span className="text-gradient">Technologies</span>
             </h2>
@@ -45,7 +47,9 @@ export const SkillsSection = () => {
             <div className="p-8 rounded-2xl card-gradient border border-border">
               <div className="flex items-center gap-3 mb-8">
                 <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
-                  <span className="text-primary font-mono text-lg">{'</>'}</span>
+                  <span className="text-primary font-mono text-lg">
+                    {"</>"}
+                  </span>
                 </div>
                 <h3 className="text-xl font-semibold">Web Development</h3>
               </div>
@@ -76,7 +80,7 @@ export const SkillsSection = () => {
           <div className="mt-16 text-center">
             <p className="text-muted-foreground mb-6">Also experienced with</p>
             <div className="flex flex-wrap justify-center gap-3">
-              {['Git', 'REST APIs'].map((tool) => (
+              {["Git", "REST APIs"].map((tool) => (
                 <span
                   key={tool}
                   className="px-4 py-2 rounded-full border border-border bg-card text-sm text-muted-foreground hover:border-primary hover:text-foreground transition-all duration-300"

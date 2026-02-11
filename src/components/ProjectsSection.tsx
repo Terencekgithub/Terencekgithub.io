@@ -1,34 +1,42 @@
-import { ExternalLink, Github, Cpu, Globe } from 'lucide-react';
-import { Button } from '@/components/ui/button';
+import { ExternalLink, Github, Cpu, Globe } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const projects = [
   {
-    title: 'Smart Automation Dashboard',
-    description: 'A real-time IoT dashboard for monitoring and controlling smart home devices. Built with React and Arduino for seamless communication.',
-    tags: ['React', 'HTML','CSS','Javascript','Node.js', 'ESP32', 'C/C++'],
-    type: 'iot',
-    image: 'https://images.unsplash.com/photo-1558002038-1055907df827?w=600&h=400&fit=crop',
+    title: "Smart Automation Dashboard",
+    description:
+      "A real-time IoT dashboard for monitoring and controlling smart home devices. Built with React and Arduino for seamless communication.",
+    tags: ["React", "HTML", "CSS", "Javascript", "Node.js", "ESP32", "C/C++"],
+    type: "iot",
+    image:
+      "https://images.unsplash.com/photo-1558002038-1055907df827?w=600&h=400&fit=crop",
   },
   {
-    title: 'E-Commerce Platform',
-    description: 'Full-stack e-commerce solution with real-time inventory management, payment processing, and admin dashboard.',
-    tags: ['ReactJS', 'TypeScript', 'MySQL', 'Payfast'],
-    type: 'web',
-    image: 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=600&h=400&fit=crop',
+    title: "E-Commerce Platform",
+    description:
+      "Full-stack e-commerce solution with real-time inventory management, payment processing, and admin dashboard.",
+    tags: ["ReactJS", "TypeScript", "MySQL", "Payfast"],
+    type: "web",
+    image:
+      "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=600&h=400&fit=crop",
   },
   {
-    title: 'Generator Automation Monitoring System',
-    description: 'Real-time monitoring solution for industrial equipment using Modbus protocol and predictive analytics.',
-    tags: ['Python'],
-    type: 'iot',
-    image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=600&h=400&fit=crop',
+    title: "Generator Automation Monitoring System",
+    description:
+      "Real-time monitoring solution for industrial equipment using Modbus protocol and predictive analytics.",
+    tags: ["Python"],
+    type: "iot",
+    image:
+      "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=600&h=400&fit=crop",
   },
   {
-    title: 'SaaS Analytics Dashboard',
-    description: 'Beautiful analytics dashboard with real-time data visualization, user management, and API integrations.',
-    tags: ['React'],
-    type: 'web',
-    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop',
+    title: "SaaS Analytics Dashboard",
+    description:
+      "Beautiful analytics dashboard with real-time data visualization, user management, and API integrations.",
+    tags: ["React"],
+    type: "web",
+    image:
+      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",
   },
 ];
 
@@ -38,7 +46,9 @@ export const ProjectsSection = () => {
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <span className="text-primary font-mono text-sm mb-4 block">Portfolio</span>
+            <span className="text-primary font-mono text-sm mb-4 block">
+              Portfolio
+            </span>
             <h2 className="text-3xl md:text-4xl font-bold">
               Featured <span className="text-gradient">Projects</span>
             </h2>
@@ -61,7 +71,7 @@ export const ProjectsSection = () => {
                   <div className="absolute inset-0 bg-gradient-to-t from-card to-transparent" />
                   <div className="absolute top-4 left-4">
                     <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-background/80 backdrop-blur-sm border border-border text-xs font-medium">
-                      {project.type === 'iot' ? (
+                      {project.type === "iot" ? (
                         <>
                           <Cpu className="w-3 h-3 text-primary" />
                           IoT
@@ -99,10 +109,6 @@ export const ProjectsSection = () => {
 
                   {/* Actions */}
                   <div className="flex gap-3">
-                    <Button variant="outline" size="sm" className="flex-1">
-                      <Github className="w-4 h-4 mr-2" />
-                      Code
-                    </Button>
                     <Button variant="default" size="sm" className="flex-1">
                       <ExternalLink className="w-4 h-4 mr-2" />
                       Live Demo
