@@ -1,12 +1,12 @@
-import { useState, useEffect } from 'react';
-import { Menu, X } from 'lucide-react';
-import { Button } from '@/components/ui/button';
+import { useState, useEffect } from "react";
+import { Menu, X } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const navLinks = [
-  { name: 'About', href: '#about' },
-  { name: 'Skills', href: '#skills' },
-  { name: 'Projects', href: '#projects' },
-  { name: 'Contact', href: '#contact' },
+  { name: "About", href: "#about" },
+  { name: "Skills", href: "#skills" },
+  { name: "Projects", href: "#projects" },
+  { name: "Contact", href: "#contact" },
 ];
 
 export const Navigation = () => {
@@ -17,25 +17,22 @@ export const Navigation = () => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
     };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? 'bg-background/80 backdrop-blur-xl border-b border-border'
-          : 'bg-transparent'
+          ? "bg-background/80 backdrop-blur-xl border-b border-border"
+          : "bg-transparent"
       }`}
     >
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-16 md:h-20">
-          <a
-            href="#"
-            className="text-xl font-bold text-gradient font-mono"
-          >
-            {'<Dev />'}
+          <a href="#" className="text-xl font-bold text-gradient font-mono">
+            {"<Dev />"}
           </a>
 
           {/* Desktop Navigation */}
@@ -50,7 +47,10 @@ export const Navigation = () => {
               </a>
             ))}
             <Button variant="hero" size="sm">
-              Let's Talk
+              <a href="#contact" className="text-sm">
+                Let's Talk
+              </a>
+              
             </Button>
           </div>
 

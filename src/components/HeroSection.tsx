@@ -10,15 +10,15 @@ export const HeroSection = () => {
         className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-primary/5 rounded-full blur-3xl animate-pulse-glow"
         style={{ animationDelay: "1.5s" }}
       />
-
       <div className="container mx-auto px-6 pt-20 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           {/* Badge */}
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-primary/30 bg-primary/5 mb-8 animate-fade-up">
             <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-            <span className="text-sm text-muted-foreground font-mono">
-              Available for projects collaboration
+            <span className="text-2xl text-muted-foreground font-mono">
+              Terence Kamogelo Moabi
             </span>
+            <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
           </div>
 
           {/* Main heading */}
@@ -26,8 +26,8 @@ export const HeroSection = () => {
             className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6 animate-fade-up"
             style={{ animationDelay: "0.1s" }}
           >
-            Full Stack Developer &<br />
-            <span className="text-gradient">IoT Systems Architect</span>
+            <span className="text-gradient">Full Stack Developer
+            <br />Smart IoT Systems Architect</span>
           </h1>
 
           {/* Subtitle */}
@@ -35,9 +35,9 @@ export const HeroSection = () => {
             className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 animate-fade-up"
             style={{ animationDelay: "0.2s" }}
           >
-            Building connected experiences from the browser to the edge. I craft
+            Building connected experiences from the browser to the edge. <br/> I craft
             beautiful web applications and design intelligent automation
-            systems.
+            systems to make lifes better.
           </p>
 
           {/* CTA Buttons */}
